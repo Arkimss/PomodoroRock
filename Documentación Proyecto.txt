@@ -1,0 +1,8 @@
+### 3 de marzo
+
+Instalo dependencias e inicializo el proyecto, creo un entorno de virtual con Pip
+
+Voy a utilizar Python 3.12.3
+ 	       pip    25.0.1
+	       django 5.1.6
+

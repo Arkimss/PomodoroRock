@@ -1,0 +1,33 @@
+Pedido de Desarrollo de Página Web para Nuestro Local Pomodoro rock
+
+Especificaciones y Requisitos
+
+
+A continuación, se detallan los pedidos y especificaciones para el desarrollo de nuestra página web. Nuestro objetivo es crear una plataforma fácil de navegar y que se adapte a las necesidades de nuestro local.
+
+Botones y Funcionalidades
+
+1. Botón de Menú (1): Debe llevar a la página 2, donde se encuentra el menú del local.
+
+2. Botón de Cerveza Artesanal (2): Debe llevar a la página 3, donde se encuentra la carta con las especificaciones de las bebidas.
+
+3. Botón de Sobre Nosotros (3): Debe llevar a la página 4, donde se encuentra la información sobre nuestro local.
+
+4. Botón de Reserva (4): Debe llevar directamente a WhatsApp con un mensaje predeterminado que los clientes puedan modificar. El mensaje debe incluir la siguiente información:
+- Fecha de recordación
+- Cantidad de personas
+- Horario de llegada al local
+
+5. Botón de Promos (5): Debe llevar a la página 5, donde se encuentran las promociones actuales. Requisito adicional: Queremos tener acceso para modificar las promos, es decir, subir una imagen con la promo nueva.
+
+6. Botón de Última Página (6): Debe llevar a la última página numero 6 del pdf que le envié de nuestra página web.
+
+Código QR
+
+- Crear un código QR que permita a los clientes acceder directamente a nuestra página web.
+- El código QR debe estar disponible en la página de inicio y en cualquier otra página que considere necesario.
+- El código QR debe ser fácil de escanear y debe funcionar correctamente en diferentes dispositivos.
+
+Requisitos Generales
+- La página web debe ser fácil de navegar y adaptable a diferentes dispositivos.
+- Los botones deben ser claros y fáciles de entender.
