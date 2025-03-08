@@ -1,0 +1,25 @@
+{% extends "layouts/base.html" %}
+
+{% block head %} 
+ {{block.super}}
+ <link rel="stylesheet" href="static/estilos/home.css">
+{% endblock %} 
+
+{% block content %} 
+  <main>
+    <div class="parte-izquierda ">
+    <img src="static/imagenes/paginaprincipal2.JPG" alt="Página principal" class="img-fluid" width="100%" height="100%"/>
+     </div>
+    <div class="container parte-derecha">
+      <div class="botones bg-dark p-5">
+        <a href="" class="btn btn-primary">Menú</a>
+        <a href="" class="btn btn-primary">Cerveza artesanal</a>
+        <a href="" class="btn btn-primary">Sobre nosotros</a>
+        <a href="" class="btn btn-primary">Reservaciones</a>
+        <a href="" class="btn btn-primary">Promos de hoy</a>
+        <a href="" class="btn btn-primary">Cena y eventos privados</a>
+      </div>
+    </div>
+      
+  </main>
+{% endblock %} 
