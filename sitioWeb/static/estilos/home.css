@@ -1,4 +1,5 @@
-*,*::after, *::before {
+
+*, *::after, *::before {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -6,16 +7,16 @@
 
 main {
     width: 100%;
-    display:flex ;
+    height: 100vh;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
 }
 
-.parte-izquierda{
+.parte-izquierda {
     width: 100%;
     height: 46vh;
- 
 }
 
 .parte-derecha {
@@ -23,10 +24,8 @@ main {
     height: 54vh;
     display: flex;
     flex-direction: column;
-    justify-content: start; /* Distribuye botones arriba y footer abajo */
+    justify-content: start;
     align-items: center;
-  
-   
 }
 
 .menu {
@@ -34,47 +33,27 @@ main {
     font-size: 2.5rem;
 }
 
-.cerveza {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.cerveza, .reservaciones {
     font-size: 3.5rem;
     color: #941617;
 }
 
-.reservaciones {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 3.5rem;
-    color: #941617;
-}   
-
-.sobrenosotros {
-    font-family: sans-serif;
-    font-size: 2.5rem;
-}
-
-.promos {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 2.5rem;
-}
-
-.cena {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.sobrenosotros, .promos, .cena {
     font-size: 2.5rem;
 }
 
 .footer {
     width: 100%;
-    height: 70px;
+    min-height: 70px;
     flex-direction: row;
-    padding-top: 20px;
-    padding-bottom: 20px; ;
-    background-color: #ffffff; /* Color oscuro */
+    padding: 20px 0;
+    background-color: #ffffff;
     color: white;
-    }
+}
+
 .botones {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 0;
     width: 95%;
-   
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -85,40 +64,33 @@ main {
     background-size: cover;
     background-position: center;
     height: 90vh;
-    
 }
 
 .botones > a {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Asegura que el texto esté centrado y la flecha a la derecha */
+    justify-content: space-between;
     text-decoration: none;
     text-align: center;
     border: 2px solid white;
     width: 90%;
-    height: 5vh;
+    height: 3vh;
     transition: all 0.3s;
     border-radius: 45px;
-    padding: 0 20px; /* Añade espacio a los lados para el contenido */
+   
 }
 
 .boton {
     display: flex;
-    justify-content: space-between; /* Asegura que el texto esté centrado y la flecha a la derecha */
-    width: 90%; /* Ajuste para hacerlos responsivos */
-    max-width: 500px;
+    justify-content: space-between;
+    max-width: 60%;
     margin: 10px auto;
     text-align: center;
-
-
     padding: 12px 24px;
     border-radius: 45px;
- 
-    font-size: 1.9rem;
+    font-size: 1.5rem;
     font-weight: bold;
     text-decoration: none;
-
- 
 }
 
 .boton.bordo {
@@ -132,20 +104,15 @@ main {
     border: 2px solid #941617;
 }
 
-
 .boton.bordo:hover {
-    background-color: white; /* Un tono más claro en hover */
-    color: #941617; /* Cambia el color del texto en hover */
-    border : 2px solid #941617;
+    background-color: white;
+    color: #941617;
+    border: 2px solid #941617;
 }
 .boton.blanco:hover {
-    background-color: #941617; /* Un tono más oscuro en hover */
-    color: white; /* Cambia el color del texto en hover */
-    border : 2px solid white;
-}
-
-.boton.blanco .icono {
-    border: 2px solid #941617;
+    background-color: #941617;
+    color: white;
+    border: 2px solid white;
 }
 
 .boton .icono {
@@ -158,21 +125,109 @@ main {
     border: 2px solid white;
     margin-left: 10px;
 }
+
 a .logo {
     width: 64px;
     height: 64px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*  Necesito querys para 0 - 768
+                    para 768 - 1024 
+                    para 1024 - ---
+------------------------ */
+        
+/*      MEDIA QUERY ≤ 1024px
+   */
+/* ------------------------ */
+@media  (max-width: 768px) {
+    main {
+        flex-direction: column;
+        height: auto;
     }
 
-@media (min-width: 1000px) {
+    .parte-izquierda, .parte-derecha {
+        width: 100%;
+        height: auto;
+    }
+
+    .botones {
+        height: auto;
+        padding: 40px 10px;
+    }
+
+    .botones > a {
+        width: 60%;
+        height: 1vh;
+        border-radius: 35px;
+        font-size: 1.2rem;
+    }
+
+    .boton {
+        font-size: 1.8rem;
+        max-width: 70%;
+    }
+
+}
+ 
+@media  (max-width: 1024px) {
+    main {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .parte-izquierda, .parte-derecha {
+        width: 100%;
+        height: auto;
+    }
+
+    .botones {
+        height: auto;
+        padding: 40px 10px;
+    }
+
+    .botones > a {
+        width: 60%;
+        height: 13%;
+        border-radius: 35px;
+        font-size: 1.2rem;
+    }
+
+    .boton {
+        font-size: 1.8rem;
+        max-width: 70%;
+    }
+
+    footer {
+        min-height: 50PX;
+        padding: 5px;
+       
+    }
+
+    a .logo {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+
+/* ------------------------ */
+/*      MEDIA QUERY > 1024px   */
+/* ------------------------ */
+
+
+
+
+@media (min-width: 1025px) {
     main {
         flex-direction: row;
     }
 
-    .parte-izquierda {
-        width:50%;
-        height: 100vh;
-    }
-    .parte-derecha {
+    .parte-izquierda, .parte-derecha {
         width: 50%;
         height: 100vh;
     }
@@ -188,12 +243,15 @@ a .logo {
     footer {
         padding-bottom: 10px;
         height: 10vh;
-        
     }
 
-    
-   a .logo {
-    width: 50px;
-    height: 50px;
+    .boton {
+        font-size: 2rem;
+        max-width: 80%;
+    }
+
+    a .logo {
+        width: 50px;
+        height: 50px;
     }
 }

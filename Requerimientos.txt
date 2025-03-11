@@ -31,3 +31,13 @@ Código QR
 Requisitos Generales
 - La página web debe ser fácil de navegar y adaptable a diferentes dispositivos.
 - Los botones deben ser claros y fáciles de entender.
+
+
+
+
+
+ANOTACIONES: 
+
+ARREGLAR PROBLEMAS DE ADAPTABILIDAD DE DIMENSIONES EN LA PAGINA PRINCIPAL.
+
+
