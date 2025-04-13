@@ -14,3 +14,7 @@ def menu(request):
 
 def cerveza(request):
     return render(request, "cerveza.html")
+
+
+def sobrenosotros(request):
+    return render(request, "sobrenosotros.html")

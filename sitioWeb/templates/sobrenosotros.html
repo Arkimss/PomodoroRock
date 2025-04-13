@@ -1,0 +1,78 @@
+{% extends "layouts/base.html" %}
+{% block head %} 
+ {{block.super}}
+ <link rel="stylesheet" href="static/estilos/sobrenosotros.css">
+{% endblock %} 
+
+{% block content %} 
+<main class="">
+    <div class="wave-header">
+       <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 370" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(94, 16, 17, 1)" offset="0%"></stop><stop stop-color="rgba(94   |                                                                                                                                                        , 16, 17, 1)" offset="100%"></stop></linearGradient></defs>
+        <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" 
+        d="M0,111L60,135.7C120,160,240,210,360,240.5C480,271,600,284,720,289.8C840,296,960,296,1080,271.3C1200
+        ,247,1320,197,1440,178.8C1560,160,1680,173,1800,154.2C1920,136,2040,86,2160,92.5C2280,99,2400,160,2520
+        ,154.2C2640,148,2760,74,2880,49.3C3000,25,3120,49,3240,49.3C3360,49,3480,25,3600,61.7C3720,99,3840,197
+        ,3960,222C4080,247,4200,197,4320,160.3C4440,123,4560,99,4680,123.3C4800,148,4920,222,5040,234.3C5160
+        ,247,5280,197,5400,197.3C5520,197,5640,247,5760,259C5880,271,6000,247,6120,203.5C6240,160,6360,99,6480
+        ,80.2C6600,62,6720,86,6840,111C6960,136,7080,160,7200,166.5C7320,173,7440,160,7560,154.2C7680,148,7800
+        ,148,7920,141.8C8040,136,8160,123,8280,154.2C8400,185,8520,259,8580,296L8640,333L8640,370L8580,370C8520,
+        370,8400,370,8280,370C8160,370,8040,370,7920,370C7800,370,7680,370,7560,370C7440,370,7320,370,7200,
+        370C7080,370,6960,370,6840,370C6720,370,6600,370,6480,370C6360,370,6240,370,6120,370C6000,370,5880,370
+        ,5760,370C5640,370,5520,370,5400,370C5280,370,5160,370,5040,370C4920,370,4800,370,4680,370C4560,370,4440
+        ,370,4320,370C4200,370,4080,370,3960,370C3840,370,3720,370,3600,370C3480,370,3360,370,3240,370C3120,370,
+        3000,370,2880,370C2760,370,2640,370,2520,370C2400,370,2280,370,2160,370C2040,370,1920,370,1800,370C1680,370
+        ,1560,370,1440,370C1320,370,1200,370,1080,370C960,370,840,370,720,370C600,370,480,370,360,370C240,370,120,370,60,370L0,370Z">
+       </path>
+    </svg>
+</div>
+    <div>
+        <section class="textoInicial d-flex flex-column align-items-center">
+        <h1 class="text-center">Nuestra Historia</h1>
+        <p class="parrafo">En la ciudad de Quilmes, Provincia de Buenos Aires, nació un joven llamado Pablo Lazo con una pasión innata por la cocina.
+            La decisión de sus padres de mudarse a la ciudad Pila, un pueblo pequeño, cuando él era apenas un niño, resultó ser un punto de inflexión en su vida.
+            Fue allí donde, su motivación inicialmente fue por su deseo de mejorar la comida que su madre preparaba.
+            Y con solo 7 años, comenzó a incursionar más en el mundo de la cocina vendiendo facturas, aunque para que la gente se las comprara porque sabía que en aquel entonces era solo un niño,
+            pidió ayuda a sus mayores con el tema de las ventas. Con el tiempo, su entusiasmo por la cocina crecía,
+            el joven se instruyó bajo la tutela de uno de los mejores cocineros de Pila, el dueño del restaurante "Lo De Juanjo".
+        </p>
+        
+        <span class="textoOculto" id="textoOculto">
+        <p class="parrafo">
+            Su determinación por estudiar cocina lo llevó a ahorrar cada peso que ganaba en su trabajo para poder pagar sus estudios en el
+            Instituto Gastronómico Argentino (IGA). Finalmente, después de años de esfuerzo y dedicación, logró graduarse.
+        </p>
+
+        
+        <p class="parrafo">
+            Fue entonces cuando decidió dar vida a su proyecto más ambicioso hasta ese momento: "Pomodoro Rock". Con una visión clara y una 
+            pasión inquebrantable, comenzó a construir su propio restaurante, que con el tiempo se convertiría en un patio cervecero donde la 
+            creación de cerveza artesanal y hamburguesas excepcionales se convirtieron en su sello distintivo.
+        </p>
+
+        <p class="parrafo">
+            La historia de "Pomodoro Rock" es un testimonio de la perseverancia y la innovación. Desde sus 
+            humildes comienzos como un pequeño local de venta de comida para llevar, pasando por su evolución como restaurante y patio cervecero, cada paso ha estado 
+            marcado por la creatividad y el compromiso de su fundador.
+        </p>
+
+        <p class="parrafo">
+            Hoy en día, nos gusta pensar que "Pomodoro Rock" es sinónimo de excelencia gastronómica y hospitalidad. 
+            Su legado es una inspiración para todos aquellos que buscan convertir sus pasiones en realidad, y su historia
+            es un recordatorio de que, con dedicación y visión, cualquier sueño puede hacerse realidad.
+        </p>
+        </span>
+        <button class="btn btn-primary leerMas" onclick="modificarTexto()">Leer Más</button>
+    
+    </section>
+
+        
+    </div>
+    </main>
+
+
+
+<script src="../static/js/sobrenosotros.js"> </script>
+{% endblock %} 
+
+
+<!--<img src="static/imagenes/sobrenosotros.jpg" alt="Imagen del menu"> -->

@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bree+Serif&display=swap');
+
+
+:root {
+    --font-bebas-neue: 'Bebas Neue', cursive;
+    --font-bree-serif: 'Bree Serif', serif;
+    --color-primario: #313131;
+    --color-secundario: #941617;
+}
+
+
+main {
+   
+    width: 100%;
+    height: 100vh;
+}
+
+.wave-header {
+    width: 100%;
+    height: 35vh;
+   
+}
+
+h1 {
+    text-align: center;
+    margin-top: -2rem;
+    font-size: 3.5rem;
+    font-family: var(--font-bree-serif);
+    color: var(--color-primario);
+ 
+}
+
+
+
+
+.parrafo {
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 1% 10%;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.textoOculto {
+    display: none;
+}
+
+
+.leerMas {
+    font-size: 1.3rem;
+    font-family: var(--font-bebas-neue);
+    color: var(--color-primario);
+    background-color: var(--color-secundario) ;
+    
+}

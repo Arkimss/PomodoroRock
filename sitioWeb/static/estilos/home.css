@@ -93,6 +93,13 @@ main {
     text-decoration: none;
 }
 
+.bree-serif-regular {
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
 .boton.bordo {
     background-color: #941617;
     border: 2px solid #ffffff;
