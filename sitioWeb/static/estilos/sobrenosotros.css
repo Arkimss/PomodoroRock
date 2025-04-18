@@ -6,6 +6,7 @@
     --font-bree-serif: 'Bree Serif', serif;
     --color-primario: #313131;
     --color-secundario: #941617;
+    --color-claro: #ffffff;
 }
 
 
@@ -49,7 +50,12 @@ h1 {
 .leerMas {
     font-size: 1.3rem;
     font-family: var(--font-bebas-neue);
-    color: var(--color-primario);
+    color: var(--color-claro);
     background-color: var(--color-secundario) ;
     
+}
+
+.icono { 
+    width: 64px;
+    height: 64px;
 }

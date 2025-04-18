@@ -18,3 +18,7 @@ def cerveza(request):
 
 def sobrenosotros(request):
     return render(request, "sobrenosotros.html")
+
+
+def promosdehoy(request):
+    return render(request, "promosdehoy.html")

@@ -1,19 +1,21 @@
 
-
-
-function modificarTexto(){
-    let boton = document.querySelector(".leerMas")
+document.addEventListener("DOMContentLoaded", () => {
+    let boton = document.getElementById("leerMas")
     let texto = document.getElementById("textoOculto");
-
+  
     boton.addEventListener("click", () => {
-        if (texto.style.display == "none"){
+        const displayStyle = window.getComputedStyle(texto).display;
+
+        if (displayStyle == "none"){
             mostrarTextoOculto(texto,boton);
+           
         }else{
             ocultarTextoOculto(texto, boton);
         }
     });
-    return;
-}
+  });
+
+
 
 function mostrarTextoOculto(texto,boton){
     texto.style.display = "block";

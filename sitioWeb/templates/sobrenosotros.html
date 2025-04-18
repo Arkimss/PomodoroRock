@@ -7,6 +7,7 @@
 {% block content %} 
 <main class="">
     <div class="wave-header">
+        
        <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 370" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(94, 16, 17, 1)" offset="0%"></stop><stop stop-color="rgba(94   |                                                                                                                                                        , 16, 17, 1)" offset="100%"></stop></linearGradient></defs>
         <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" 
         d="M0,111L60,135.7C120,160,240,210,360,240.5C480,271,600,284,720,289.8C840,296,960,296,1080,271.3C1200
@@ -26,7 +27,8 @@
     </svg>
 </div>
     <div>
-        <section class="textoInicial d-flex flex-column align-items-center">
+        <a href="/"><img src="../static/imagenes/icono.png" class="icono" alt="Volver al menu principal"></a>
+
         <h1 class="text-center">Nuestra Historia</h1>
         <p class="parrafo">En la ciudad de Quilmes, Provincia de Buenos Aires, nació un joven llamado Pablo Lazo con una pasión innata por la cocina.
             La decisión de sus padres de mudarse a la ciudad Pila, un pueblo pequeño, cuando él era apenas un niño, resultó ser un punto de inflexión en su vida.
@@ -61,8 +63,9 @@
             es un recordatorio de que, con dedicación y visión, cualquier sueño puede hacerse realidad.
         </p>
         </span>
-        <button class="btn btn-primary leerMas" onclick="modificarTexto()">Leer Más</button>
-    
+       
+        <button class="btn btn-primary leerMas" id="leerMas" >Leer Más</button>
+        <a href="/"><img src="../static/imagenes/icono.png" class="icono mt-5" alt="Volver al menu principal"></a>
     </section>
 
         
@@ -75,4 +78,4 @@
 {% endblock %} 
 
 
-<!--<img src="static/imagenes/sobrenosotros.jpg" alt="Imagen del menu"> -->
+<!--<img src="static/imagenes/sobrenosotros.jpg" alt="Imagen del menu" > -->
