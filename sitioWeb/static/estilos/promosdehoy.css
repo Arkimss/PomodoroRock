@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Gabriela&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial Black', sans-serif;
+  color: #fff;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url('../imagenes/FondoPromos.png');
+  /* background-image: url("../imagenes/FondoPromos.png") no-repeat center center fixed; */
+  background-size: cover;
+  text-align: center;
+}
+
+  .container {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px 20px;
+  }
+
+  h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 4.5em;
+    text-shadow: 2px 2px 5px #ff6347;
+    margin-bottom: 30px;
+  }
+
+  h2{
+    font-family: 'Lobster', sans-serif;
+    font-size: 3.5em;
+    text-shadow: 2px 2px 5px #ff6347;
+  }
+
+  p{
+    font-family: 'Gabriela';
+    font-size: 2.5em;
+  }
+
+  @keyframes flame {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.promo {
+    animation: flame 3s infinite;
+}
+
+  .whatsapp {
+    display: inline-block;
+    margin-top: 30px;
+    background-color: #25D366;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+
+  .whatsapp:hover {
+    background-color: #1ebc5c;
+  }
+
+  .info {
+    margin-top: 20px;
+    font-size: 1.2em;
+  }
